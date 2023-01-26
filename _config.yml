@@ -29,6 +29,28 @@ include: [_pages]
 sass:
   style: compressed
 
+defaults:
+  - 
+    scope:
+      type: posts
+      path: posts
+    values:
+      is_post: true
+      layout: post
+      permalink: /:year/:title
+  -
+    scope:
+      type: pages
+      path: _pages
+    values:
+      is_post: false
+      layout: default
+
+  
+
+
+
+
 # Build settings
 theme: null
 plugins:
