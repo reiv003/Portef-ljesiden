@@ -4,6 +4,28 @@ layout: default
 
 <div class="blog">
     <div class="sidebar">
-        
+
+    </div>
+
+    <div class="blog__content">
+        <article class="blog__post">
+            <h1>{{ page.title }}</h1>
+            <div class="post__date">{{ page.date | date: "%b %-d, %Y" }}</div>
+            <div class="post__tags">
+                <ul><li>
+                    {% if post %}
+                        {% assign tags = post.tags %}
+                    {% else %}
+                        {% assign tags = page.tags %}
+                    {% endif %}
+                    {% for tag in tags %}
+                        <a href="/blog/tags/{{tag|slugize}}">{{ tag }}</a>
+                        <!-- this adds a comma between tags, unless it is the last tag in the list. -->
+                        {% unless forloop.last %}&nbsp;{% endunless %}
+                    {% endfor %}
+                </li></ul>
+            </div>
+            <div class="post__content">{{ content }}</div>
+        </article>
     </div>
 </div>
