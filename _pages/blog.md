@@ -3,12 +3,12 @@ title: Blogg
 permalink: /blogg
 ---
 
-<div class="blog">
-    <div class="sidebar">
+ <div class="sidebar">
     {% include sidebar.html %}
     </div>
-    <h1>Blogg</h1>
-    <ul>
+<div class="blog">
+    <div><h1>Blogg</h1></div>
+    <div><ul>
         {% for post in site.posts %}
         <li class="blog__post">
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -33,5 +33,6 @@ permalink: /blogg
             </div>
         </li>
         {% endfor %}
-    </ul>
+    </ul></div>
 </div>
+<div class="accent"><div class="accent2"></div></div>

@@ -51,7 +51,7 @@ footer {
 
 }
 
-.blog__post, .index {
+.blog__post, .index, .blog {
     background-color: var(--content-background-color);
     border-radius: 26px;
     grid-column: 4 / span 12;
@@ -59,7 +59,7 @@ footer {
     z-index: 1;
 }
 
-.index > div {
+.index > div, .blog > div {
     margin-left: 20%;
     margin-top: 3em;
     margin-right: 30%;

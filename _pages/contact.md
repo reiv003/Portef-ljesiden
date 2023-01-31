@@ -4,8 +4,11 @@ permalink: /kontakt
 ---
 
 <div class="sidebar">
-    En annen tekst her!
+    Kontakt
 </div>
 
-# Kontakt
-
+<div class="index">
+    <div><h1>Kontakt</h1></div>
+ 
+</div>
+<div class="accent"><div class="accent2"></div></div>
