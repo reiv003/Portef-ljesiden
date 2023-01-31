@@ -1,0 +1,38 @@
+<div class="sidebar">
+    {% include sidebar.html %}
+</div>
+
+<div class="blog">
+    <div class="blog__content">
+        <h1 class="post__title"> Alle innlegg under {{ page.title }}</h1>
+        <ul>
+            <!-- pagetag defineres i front matter (verdien er tagen det gjelder, f.eks. webdev, design, etc).
+            En ny html-fil må opprettes for hver tag-side. Sidene er under _pages > blog-pages > tags. -->
+            {% assign pagetag = site.tags[page.pagetag] %}
+            {% for post in pagetag %}
+            <li class="blog__post">
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <div class="post__date">{{ post.date | date: "%b %-d, %Y" }}</div>
+                <div class="post__tags">
+                    <ul>
+                        <li>
+                            {% if post %}
+                                {% assign tags = post.tags %}
+                            {% else %}
+                                {% assign tags = page.tags %}
+                            {% endif %}
+                          {% for tag in tags %}
+                            <a href="/blogg/tags/{{tag|slugize}}">{{tag}}</a>
+                            {% unless forloop.last %}&nbsp;{% endunless %}
+                          {% endfor %}
+                           </li>
+                    </ul>
+                </div>
+                <div class="post">
+                    {{ post.content }}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

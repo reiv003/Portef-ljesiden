@@ -19,7 +19,7 @@ layout: default
                         {% assign tags = page.tags %}
                     {% endif %}
                     {% for tag in tags %}
-                        <a href="/blog/tags/{{tag|slugize}}">{{ tag }}</a>
+                        <a href="/blogg/tags/{{tag|slugize}}">{{ tag }}</a>
                         <!-- this adds a comma between tags, unless it is the last tag in the list. -->
                         {% unless forloop.last %}&nbsp;{% endunless %}
                     {% endfor %}
