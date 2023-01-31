@@ -1,3 +1,20 @@
-a, a:visited {
-    color: purple;
+a {
+    color:aquamarine;
+}
+
+header a {
+    color: var(--title-color);
+    text-decoration: none;
+}
+
+.blog__post a, .post__link {
+    color: var(--inline-link-color);
+}
+
+.post__tags a {
+    color: var(--text-detail-color);
+}
+
+.sidebar a {
+    color: var(--inverse-text-color);
 }
