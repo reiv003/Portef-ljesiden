@@ -2,11 +2,10 @@
 layout: default
 ---
 
+<div class="sidebar">
+    {% include sidebar.html %}
+</div>
 <div class="blog">
-    <div class="sidebar">
-
-    </div>
-
     <div class="blog__content">
         <article class="blog__post">
             <h1>{{ page.title }}</h1>
@@ -19,7 +18,7 @@ layout: default
                         {% assign tags = page.tags %}
                     {% endif %}
                     {% for tag in tags %}
-                        <a href="/blog/tags/{{tag|slugize}}">{{ tag }}</a>
+                        <a href="/blogg/tags/{{tag|slugize}}">{{ tag }}</a>
                         <!-- this adds a comma between tags, unless it is the last tag in the list. -->
                         {% unless forloop.last %}&nbsp;{% endunless %}
                     {% endfor %}
@@ -29,3 +28,4 @@ layout: default
         </article>
     </div>
 </div>
+<div class="accent"><div class="accent2"></div></div>

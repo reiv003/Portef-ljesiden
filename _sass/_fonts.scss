@@ -1,0 +1,72 @@
+@font-face {
+    font-family: InterTightSemiBold;
+    src: url('/assets/fonts/InterTight-VariableFont_wght.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: InterTightExtraLight;
+    src: url('/assets/fonts/InterTight-VariableFont_wght.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: InterTightThin;
+    src: url('/assets/fonts/InterTight-VariableFont_wght.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url('/assets/fonts/Manrope-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: ManropeLight;
+    src: url('/assets/fonts/Manrope-VariableFont_wght.ttf');
+    font-weight: 300;
+}
+
+body {
+    font-family: Manrope;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: InterTightSemiBold;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: InterTightSemiBold;
+}
+
+h3 {
+    color: var(--page-subtitle-color);
+    font-size: 1.5em;
+}
+
+header nav {
+    font-size: 2em;
+    font-family: ManropeLight;
+}
+
+footer, .sidebar {
+    color: var(--inverse-text-color);
+}
+
+.post__content h2 {
+    font-size: 2em;
+    font-family: InterTightThin;
+    color: var(--post-subtitle-color);
+}
+
+.site-title {
+    font-size: 4em;
+    font-family: InterTightSemiBold;
+}
+
+.post__date {
+    font-family: InterTightSemiBold;
+}

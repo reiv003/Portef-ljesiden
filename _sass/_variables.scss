@@ -1,0 +1,16 @@
+:root {
+    --site-background-color: darkslategrey;
+    --content-background-color: #fff;
+    --inline-link-color: #6C69F6;
+    //detail er brukt til post-dato og bildetekst
+    --text-detail-color: #8C8597;
+    --title-color: #000;
+    --post-subtitle-color: #20859B;
+    --page-subtitle-color: #003E4B;
+    //accent her er linjer/rektangler på siden av blokker med tekst
+    --project-accent-color: #20859B;
+    --post-accent-color: #A2C5CC;
+    --sidebar-background-color: rgba(162, 197, 204, 0.25);
+    //used for sidebar and footer on dark backgrounds
+    --inverse-text-color: #fff;
+}

@@ -1,0 +1,28 @@
+---
+permalink: /blogg/tags
+title: Tags
+---
+
+<div class="sidebar">
+    {% include sidebar.html %}
+</div>
+
+<div class="blog">
+    <div class="blog__content">
+        <h1 class="post__title">{{ page.title }}</h1>
+        <div class="grid__list">
+            <ul>
+                {% for tag in site.tags %}
+                {% capture tag_name %}{{ tag | first }}{% endcapture %}
+
+                <li>
+                    <h2><a href="/blogg/tags/{{ tag_name | slugize }}">{{ tag_name }}</a></h2>
+                    {% for post in site.tags[tag_name] %}
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    {% endfor %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

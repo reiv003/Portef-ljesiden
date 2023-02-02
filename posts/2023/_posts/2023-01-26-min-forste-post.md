@@ -1,5 +1,6 @@
 ---
 title: "Min første post"
+tags: [oppdatering, webdev]
 
 ---
 

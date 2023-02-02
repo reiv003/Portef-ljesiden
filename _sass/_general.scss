@@ -1,0 +1,103 @@
+//because it is the top level element, container is placed first here despite being an id.
+#container {
+    background-color: var(--site-background-color);
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: min-content max-content min-content; 
+}
+
+header {
+    background-color: var(--content-background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 2 / span 9;
+    padding: 2%;
+    border-radius: 0px 0px 26px 26px;
+    margin-bottom: 5%;
+}
+
+header ul {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header li + li::before {
+    content: " · ";
+    padding: 0.5em;
+}
+
+
+footer {
+    margin: 0.5em;
+    grid-column: 1 / span 12;
+    text-align: center;
+}
+
+.page-content {
+    grid-column: 2 / span 9;
+    /*makes the footer stay at the bottom when the mid content is not long enough.
+    300px is an arbitrary value (just trial and error until I found a value that
+    had the right spacing. normally I would do header + footer addition but it didn't
+    work here, the value needed to be higher.*/
+    min-height: calc(100vh - 300px);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 1fr;
+   
+    margin-bottom: 0.5em;
+
+}
+
+.blog__post, .index, .blog {
+    background-color: var(--content-background-color);
+    border-radius: 26px;
+    grid-column: 4 / span 12;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.index > div, .blog > div {
+    margin-left: 20%;
+    margin-top: 3em;
+    margin-right: 30%;
+}
+
+.sidebar {
+    background-color: var(--sidebar-background-color);
+    border-radius: 26px 0px 0px 26px;
+    padding: 6em;
+    grid-column: 1 / 5;
+    grid-row: 1;
+    
+}
+
+.accent {
+    grid-column: 12 / 12;
+    grid-row: 1;
+    z-index: 2;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.accent2 {
+    width: 50px;
+    height: 100%;
+    background-color: var(--post-accent-color);
+}
+
+.grid__list ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .grid__list li {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  

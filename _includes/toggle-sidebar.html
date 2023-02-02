@@ -1,0 +1,14 @@
+<button onclick="toggle_visibility('sidebar-menu');" id="navToggleButton">
+    <img src="/images/logos-icons/burgermenu.svg" aria-label="blog navigation"/>
+</button>
+
+<script>
+
+function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if(e.style.display == 'flex')
+    e.style.display = 'none';
+    else
+        e.style.display = 'flex';
+}
+</script>
