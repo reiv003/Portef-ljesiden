@@ -1,6 +1,10 @@
 //because it is the top level element, container is placed first here despite being an id.
 #container {
     background-color: var(--site-background-color);
+    background-image: url("/images/master_teal_50.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -59,10 +63,18 @@ footer {
     z-index: 1;
 }
 
+.post__content {
+    white-space: pre-line;
+}
+
 .index > div, .blog > div {
-    margin-left: 20%;
-    margin-top: 3em;
+    margin-left: 16%;
+    margin-top: 3.5em;
     margin-right: 30%;
+}
+
+.index h2 {
+    margin-bottom: 0.5em;
 }
 
 .sidebar {
@@ -72,6 +84,17 @@ footer {
     grid-column: 1 / 5;
     grid-row: 1;
     
+}
+
+.sidebar__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30%;
+}
+
+.sidebar__content div {
+    margin-bottom: 2em;
 }
 
 .accent {

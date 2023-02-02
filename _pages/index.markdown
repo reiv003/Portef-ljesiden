@@ -5,11 +5,14 @@ permalink: /
 ---
 
 <div class="sidebar">
-    Dette er forsiden
+<div class="sidebar__content">
+    <div><h1 class="sidebar__title">Velkommen!</h1></div>
+    <div>
+     På denne siden har jeg lagt ut min CV, artikler om prosjektene jeg har jobbet med og innlegg om løst og fast innen IT.</div>
+    </div>
 </div>
 
 <div class="index">
-    <div><h1>Velkommen!</h1></div>
     <div>
         <h2>Siste blogginnlegg</h2>
         <ul>
@@ -21,6 +24,27 @@ permalink: /
             </li>
             {% endfor %}
         </ul>
+    </div>
+    <div>
+        <h2>Prosjekter</h2>
+        <div>
+            <ul>
+            <li>
+                <h3><a href="/prosjekter">Prosjekt 1 ➜</a></h3>
+                <div>En linje om prosjektet, som omfatter eksisterende nettsider og designskisser.</div>
+            </li>
+            <li>
+                <h3>
+                <a href="/prosjekter">Prosjekt 2 ➜</a></h3>
+                <div>En linje om prosjektet, som omfatter eksisterende nettsider og designskisser.</div>
+            </li>
+            <li>
+                <h3><a href="/prosjekter">Prosjekt 3 ➜</a></h3>
+                <div>En linje om prosjektet, som omfatter eksisterende nettsider og designskisser.</div>
+            </li>
+            </ul>
+            <div><a href="/prosjekter">Se alle ➜</a></div>
+        </div>
     </div>
     
 </div>

@@ -56,6 +56,14 @@ footer, .sidebar {
     color: var(--inverse-text-color);
 }
 
+.sidebar {
+    font-size: 1.2em;
+}
+
+.sidebar__title {
+    font-size: 2em;
+}
+
 .post__content h2 {
     font-size: 2em;
     font-family: InterTightThin;
