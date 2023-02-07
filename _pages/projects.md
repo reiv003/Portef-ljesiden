@@ -14,4 +14,5 @@ permalink: /prosjekter
     </div>
     
 </div>
-<div class="accent"><div class="accent2"></div></div>
+<div class="accent"><div class="accent2"></div>
+</div>
