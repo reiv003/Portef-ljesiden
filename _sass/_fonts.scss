@@ -42,6 +42,10 @@ h2 {
     font-family: InterTightSemiBold;
 }
 
+.index h2 {
+    font-size: 2.5em;
+}
+
 h3 {
     color: var(--page-subtitle-color);
     font-size: 1.5em;
@@ -61,7 +65,7 @@ footer, .sidebar {
 }
 
 .sidebar__title {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .post__content h2 {

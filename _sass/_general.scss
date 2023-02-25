@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-column: 2 / span 9;
+    grid-column: 3 / 10;
     padding: 2%;
     border-radius: 0px 0px 26px 26px;
     margin-bottom: 5%;
@@ -41,7 +41,7 @@ footer {
 }
 
 .page-content {
-    grid-column: 2 / span 9;
+    grid-column: 3 / 10;
     /*makes the footer stay at the bottom when the mid content is not long enough.
     300px is an arbitrary value (just trial and error until I found a value that
     had the right spacing. normally I would do header + footer addition but it didn't
@@ -58,7 +58,7 @@ footer {
 .blog__post, .index, .blog {
     background-color: var(--content-background-color);
     border-radius: 26px;
-    grid-column: 4 / span 12;
+    grid-column: 4 / 13;
     grid-row: 1;
     z-index: 1;
 }
@@ -68,7 +68,7 @@ footer {
 }
 
 .index > div, .blog > div {
-    margin-left: 16%;
+    margin-left: 8%;
     margin-top: 3.5em;
     margin-right: 30%;
 }
@@ -124,3 +124,6 @@ footer {
     margin: 20px;
   }
   
+  #navToggleButton {
+    display: none;
+  }
