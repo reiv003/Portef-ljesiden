@@ -1,14 +1,9 @@
 ---
 title: Kontakt
 permalink: /kontakt
+layout: page
+sidebar-content: Kontakt
 ---
 
-<div class="sidebar">
-    Kontakt
-</div>
+Her er kontaktteksten
 
-<div class="index">
-    <div><h1>Kontakt</h1></div>
- 
-</div>
-<div class="accent"><div class="accent2"></div></div>

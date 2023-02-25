@@ -1,0 +1,32 @@
+@media screen and (max-width: 600px) {
+  
+  .blog {
+    background-color: var(--content-background-color);
+  }
+
+  .blog__post {
+    background-color: transparent;
+  }
+  #navToggleButton {
+    display: block;
+  }
+    
+  .hidden {
+    display: none;
+  }
+
+  .dimmed-background {
+    background-color: var(--dimmed-bg-color);
+    transition: all 0.5s ease-out;
+  }
+
+  .undimmed-background {
+    transition: all 0.5s ease-out;
+  }
+
+  .accent {
+    display: none;
+  }
+
+ 
+}

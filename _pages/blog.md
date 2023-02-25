@@ -6,7 +6,7 @@ permalink: /blogg
  <div class="sidebar">
     {% include sidebar.html %}
     </div>
-<div class="blog">
+<div class="blog" id="dimmable">
     <div><h1>Blogg</h1></div>
     <div><ul>
         {% for post in site.posts %}
