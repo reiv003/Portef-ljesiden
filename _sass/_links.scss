@@ -2,12 +2,25 @@ a {
     color:aquamarine;
 }
 
+a:hover {
+    font-weight: 900;
+}
+
 header a {
     color: var(--title-color);
     text-decoration: none;
 }
 
-.blog__post a, .post__link {
+.index__blog .post__link a {
+    text-decoration: none;
+}
+
+.index__projects a {
+    color: var(--title-link-color);
+    text-decoration: none;
+}
+
+.blog__post a, .post__link, .index__follow-link a {
     color: var(--inline-link-color);
 }
 

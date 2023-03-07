@@ -1,6 +1,10 @@
 //because it is the top level element, container is placed first here despite being an id.
 #container {
     background-color: var(--site-background-color);
+    background-image: url("/images/master_teal_50.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -12,7 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-column: 2 / span 9;
+    grid-column: 3 / 10;
     padding: 2%;
     border-radius: 0px 0px 26px 26px;
     margin-bottom: 5%;
@@ -37,7 +41,7 @@ footer {
 }
 
 .page-content {
-    grid-column: 2 / span 9;
+    grid-column: 3 / 10;
     /*makes the footer stay at the bottom when the mid content is not long enough.
     300px is an arbitrary value (just trial and error until I found a value that
     had the right spacing. normally I would do header + footer addition but it didn't
@@ -54,15 +58,41 @@ footer {
 .blog__post, .index, .blog {
     background-color: var(--content-background-color);
     border-radius: 26px;
-    grid-column: 4 / span 12;
+    grid-column: 4 / 13;
     grid-row: 1;
     z-index: 1;
 }
 
+.post__content {
+    white-space: pre-line;
+}
+
 .index > div, .blog > div {
-    margin-left: 20%;
-    margin-top: 3em;
+    margin-left: 8%;
+    margin-top: 3.5em;
     margin-right: 30%;
+}
+
+.index h2 {
+    margin-bottom: 0.5em;
+}
+
+.index__projects {
+    border-left: 10px var(--project-accent-color) solid;
+    padding-left: 1em;
+}
+
+.index__projects h3 + div {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.index__follow-link, .index .post__link, .index__blog .post__date, .index__blog .post__tags {
+    text-align: right;
+}
+
+.index__blog .post__tags {
+    margin-bottom: 0.5em;
 }
 
 .sidebar {
@@ -72,6 +102,17 @@ footer {
     grid-column: 1 / 5;
     grid-row: 1;
     
+}
+
+.sidebar__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30%;
+}
+
+.sidebar__content div {
+    margin-bottom: 2em;
 }
 
 .accent {
@@ -101,3 +142,6 @@ footer {
     margin: 20px;
   }
   
+  #navToggleButton {
+    display: none;
+  }
