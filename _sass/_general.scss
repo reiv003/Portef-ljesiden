@@ -77,6 +77,24 @@ footer {
     margin-bottom: 0.5em;
 }
 
+.index__projects {
+    border-left: 10px var(--project-accent-color) solid;
+    padding-left: 1em;
+}
+
+.index__projects h3 + div {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.index__follow-link, .index .post__link, .index__blog .post__date, .index__blog .post__tags {
+    text-align: right;
+}
+
+.index__blog .post__tags {
+    margin-bottom: 0.5em;
+}
+
 .sidebar {
     background-color: var(--sidebar-background-color);
     border-radius: 26px 0px 0px 26px;

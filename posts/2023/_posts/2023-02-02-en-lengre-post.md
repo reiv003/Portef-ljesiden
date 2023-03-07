@@ -1,9 +1,9 @@
 ---
 title: "En lengre post"
-tags: [oppdatering]
+tags: [Oppdatering, Design]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non faucibus mauris. Maecenas nec pellentesque odio, nec scelerisque nisi. Etiam posuere, nibh ac vehicula sagittis, lorem ante venenatis metus, a mollis lacus augue id justo. Quisque neque lacus, molestie id tortor interdum, iaculis aliquet arcu. Nullam lectus purus, vestibulum id efficitur nec, pretium id mi. Maecenas ac odio aliquam, cursus nibh a, tincidunt felis. Curabitur augue dui, commodo a libero quis, aliquet rutrum leo. Praesent sed vulputate nulla, quis ornare ipsum. Suspendisse ut diam elementum, placerat elit quis, efficitur tortor. Quisque lacinia, turpis quis pharetra tempus, velit risus porta mi, nec vehicula eros purus ac dui. Integer faucibus tempus purus ac malesuada. Vivamus magna justo, aliquam nec rutrum non, elementum et neque.
+Lorem ipsum dolor sit amet, [lala](google.com) adipiscing elit. Curabitur non faucibus mauris. Maecenas nec pellentesque odio, nec scelerisque nisi. Etiam posuere, nibh ac vehicula sagittis, lorem ante venenatis metus, a mollis lacus augue id justo. Quisque neque lacus, molestie id tortor interdum, iaculis aliquet arcu. Nullam lectus purus, vestibulum id efficitur nec, pretium id mi. Maecenas ac odio aliquam, cursus nibh a, tincidunt felis. Curabitur augue dui, commodo a libero quis, aliquet rutrum leo. Praesent sed vulputate nulla, quis ornare ipsum. Suspendisse ut diam elementum, placerat elit quis, efficitur tortor. Quisque lacinia, turpis quis pharetra tempus, velit risus porta mi, nec vehicula eros purus ac dui. Integer faucibus tempus purus ac malesuada. Vivamus magna justo, aliquam nec rutrum non, elementum et neque.
 
 Praesent a finibus dolor. Vivamus semper tortor vel augue fringilla, in porttitor nisl aliquam. Ut metus nisl, tristique id porttitor ut, hendrerit ac sapien. Ut finibus metus lorem, id pretium eros auctor quis. Vivamus vestibulum neque eu tellus commodo, at ornare ex lobortis. Praesent velit massa, blandit eu mollis ac, luctus at ligula. Vestibulum dictum sagittis felis, sit amet congue arcu facilisis nec. Ut ac finibus ante, at dictum justo. Pellentesque vel enim sit amet sapien auctor tristique et vestibulum ipsum. Sed congue accumsan enim ultricies ornare.
 
