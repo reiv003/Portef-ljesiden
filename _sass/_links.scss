@@ -20,7 +20,7 @@ header a {
     text-decoration: none;
 }
 
-.blog__post a, .post__link, .index__follow-link a {
+.blog__post a, .post__link a, .index__follow-link a, .text__content p a {
     color: var(--inline-link-color);
 }
 

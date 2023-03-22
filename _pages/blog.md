@@ -7,7 +7,7 @@ permalink: /blogg
     {% include sidebar.html %}
     </div>
 <div class="blog" id="dimmable">
-    <div><h1>Blogg</h1></div>
+    <h1>Blogg</h1>
     <div><ul>
         {% for post in site.posts %}
         <li class="blog__post">
@@ -23,13 +23,14 @@ permalink: /blogg
                         {% endif %}
                         {% for tag in tags %}
                             <a href="/blogg/tags/{{tag|slugize}}">{{tag}}</a>
-                        {% unless forloop.last %},&nbsp;{% endunless %}
+                        {% unless forloop.last %},{% endunless %}
                         {% endfor %}
                     </li>
                 </ul>
             </div>
             <div class="post__content">
                 {{ post.content }}
+                {% unless forloop.last%}<div class="divider"></div>{% endunless %}
             </div>
         </li>
         {% endfor %}
