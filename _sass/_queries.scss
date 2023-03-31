@@ -1,5 +1,10 @@
 @media screen and (max-width: 600px) {
   
+  body {
+    font-size: 14px;
+  }
+
+
   .blog {
     background-color: var(--content-background-color);
   }
@@ -24,9 +29,57 @@
     transition: all 0.5s ease-out;
   }
 
-  .accent {
+  .accent, .sidebar {
     display: none;
   }
 
- 
+  .index, .blog, .text__content {
+    grid-column: 1 / span 12;
+  }
+
+  .index__blog, .index__projects {
+    margin-left: 1em;
+  }
+
+  header {
+    display: block;
+  }
+
+  header nav {
+    font-size: 1.5rem;
+  }
+
+  header ul {
+    justify-content: initial;
+  }
+
+  .site-title {
+    font-size: 3rem;
+  }
+
+  .post__tags {
+    font-size: 0.9rem;
+    grid-column: 11 / 12;
+
+  }
+
+  .index__post .post__date {
+    font-size: 1rem;
+  }
+
+  .index h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+  header, .page-content {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }
