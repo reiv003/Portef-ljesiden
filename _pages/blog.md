@@ -12,7 +12,7 @@ permalink: /blogg
         {% for post in site.posts %}
         <li class="blog__post">
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <div class="post__date">{{ post.date | date: "%-d %b %Y" }}</div>
+            <div class="post__date">{{ post.date | date: "%-d. %b %Y" }}</div>
             <div class="post__tags">
                 <ul>
                     <li>
@@ -22,8 +22,7 @@ permalink: /blogg
                             {% assign tags = page.tags %}
                         {% endif %}
                         {% for tag in tags %}
-                            <a href="/blogg/tags/{{tag|slugize}}">{{tag}}</a>
-                        {% unless forloop.last %},{% endunless %}
+                            <a href="/blogg/tags/{{tag|slugize}}">{{tag}}</a>{% unless forloop.last %},{% endunless %}
                         {% endfor %}
                     </li>
                 </ul>

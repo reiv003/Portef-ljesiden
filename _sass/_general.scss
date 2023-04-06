@@ -91,16 +91,18 @@ footer {
 
 .index__post h3 {
     grid-column: 1 / 12;
+    grid-row: 1;
 }
 
 .index__post .post__date {
     grid-column: 11 / 12;
     text-align: right;
+    grid-row: 1;
 }
 
 .index__post .post__tags {
     grid-column: 9 / 12;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.7em;
     text-align: right;
 }
 
@@ -114,7 +116,7 @@ footer {
 }
 
 .index__blog h2 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.7em;
     margin-top: 1em;
 }
 
@@ -172,12 +174,14 @@ footer {
 }
 
 .blog h1 {
-    grid-column: 3 / 10;
+    grid-column: 2 / 10;
     margin-top: 1em;
+    margin-left: 0.6em;
 }
 
 .blog div {
-    grid-column: 3 / 10;
+    grid-column: 2 / 10;
+    margin-left: 1em;
 }
 
 .blog__post {
@@ -187,6 +191,13 @@ footer {
 .blog__post h2 {
     grid-column: 1 / 12;
     margin-top: 0.5em;
+    margin-left: 0.4em;
+}
+
+.blog__post h1 {
+    grid-column: 1 / 12;
+    margin-top: 1em;
+    margin-left: 0.3em;
 }
 
 .blog__post .post__date {
@@ -201,6 +212,10 @@ footer {
 
 .blog__post .post__content {
     grid-column: 1 / 12;
+}
+
+.blog .post__title {
+    margin-left: 0.2em;
 }
 
 .sidebar {
@@ -223,8 +238,10 @@ footer {
     margin-right: 30%;
     padding: 2em;*/
     grid-column: 2 / 5;
-    grid-row: 2 / 6;
+    //grid-row: 2 / 6;
+    padding-top: 8em;
 }
+
 
 
 .sidebar__title {
@@ -237,7 +254,9 @@ footer {
 
 .sidebar-menu {
     grid-column: 2 / 5;
-    grid-row: 2 / 6;
+    //grid-row: 2 / 36;
+    padding-top: 8em;
+    
 }
 
 .sidebar__blog-links {
