@@ -1,10 +1,21 @@
 //because it is the top level element, container is placed first here despite being an id.
 #container {
     background-color: var(--site-background-color);
+    background-image: url("/images/master_teal_50.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     min-height: 100vh;
+    //display: grid;
+    //grid-template-columns: repeat(12,1fr);
+    //grid-template-rows: min-content max-content min-content; 
+}
+
+.content {
+    height: 100%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: min-content max-content min-content; 
+    grid-template-columns: 1fr  1fr 1fr  minmax(min-content, 1250px) 1fr 1fr 1fr 1fr 1fr;
 }
 
 header {
@@ -12,7 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-column: 2 / span 9;
+    grid-column: 4;
     padding: 2%;
     border-radius: 0px 0px 26px 26px;
     margin-bottom: 5%;
@@ -22,6 +33,9 @@ header ul {
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 0.5em;
 }
 
 header li + li::before {
@@ -31,48 +45,231 @@ header li + li::before {
 
 
 footer {
-    margin: 0.5em;
-    grid-column: 1 / span 12;
+    padding: 1.5em;
     text-align: center;
 }
 
 .page-content {
-    grid-column: 2 / span 9;
+    grid-column: 4;
     /*makes the footer stay at the bottom when the mid content is not long enough.
-    300px is an arbitrary value (just trial and error until I found a value that
+    275px is an arbitrary value (just trial and error until I found a value that
     had the right spacing. normally I would do header + footer addition but it didn't
     work here, the value needed to be higher.*/
-    min-height: calc(100vh - 300px);
+    min-height: calc(100vh - 275px);
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: 1fr;
-   
     margin-bottom: 0.5em;
 
 }
 
-.blog__post, .index, .blog {
+.blog__post, .index, .blog, .text__content {
     background-color: var(--content-background-color);
     border-radius: 26px;
-    grid-column: 4 / span 12;
+    grid-column: 4 / 13;
     grid-row: 1;
     z-index: 1;
 }
 
-.index > div, .blog > div {
-    margin-left: 20%;
-    margin-top: 3em;
-    margin-right: 30%;
+.post__content {
+    white-space: pre-line;
+}
+
+.index {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: min-content;
+}
+
+.index__blog {
+    grid-column: 1 / 10;
+    margin-left: 4em;
+}
+
+.index__post {
+    display: grid;
+}
+
+.index__post h3 {
+    grid-column: 1 / 12;
+    grid-row: 1;
+}
+
+.index__post .post__date {
+    grid-column: 11 / 12;
+    text-align: right;
+    grid-row: 1;
+}
+
+.index__post .post__tags {
+    grid-column: 9 / 12;
+    margin-bottom: 0.7em;
+    text-align: right;
+}
+
+.index__post .post__content {
+    grid-column: 1 / 12;
+}
+
+.index__post .post__link {
+    grid-column: 11 / 12;
+    margin-top: 0.5em;
+}
+
+.index__blog h2 {
+    margin-bottom: 0.7em;
+    margin-top: 1em;
+}
+
+.index__projects {
+    border-left: 10px var(--project-accent-color) solid;
+    padding-left: 1em;
+    grid-column: 1 / 10;
+    display: grid;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    margin-left: 4em;
+}
+
+.index__projects h2 {
+    grid-column: 1 / 12;
+}
+
+.index__projects ul {
+    grid-column: 1 / 12;
+    margin-top: 1em;
+}
+
+.index__projects .index__follow-link {
+    grid-column: 11 / 12;
+}
+
+.index__projects h3 + div {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.text__content {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: min-content max-content; 
+}
+
+.text__content h1, .text__content p, .text__content div, .text__content h2 {
+    grid-column: 2 / 10;
+}
+
+.text__content p {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.text__content h1 {
+    margin-top: 1em;
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    //grid-template-rows: min-content max-content; 
+}
+
+.blog h1 {
+    grid-column: 2 / 10;
+    margin-top: 1em;
+    margin-left: 0.6em;
+}
+
+.blog div {
+    grid-column: 2 / 10;
+    margin-left: 1em;
+}
+
+.blog__post {
+    display: grid;
+}
+
+.blog__post h2 {
+    grid-column: 1 / 12;
+    margin-top: 0.5em;
+    margin-left: 0.4em;
+}
+
+.blog__post h1 {
+    grid-column: 1 / 12;
+    margin-top: 1em;
+    margin-left: 0.3em;
+}
+
+.blog__post .post__date {
+    grid-column: 11 / 12;
+    text-align: right;
+}
+
+.blog__post .post__tags {
+    grid-column: 10 / 12;
+    text-align: right;
+}
+
+.blog__post .post__content {
+    grid-column: 1 / 12;
+}
+
+.blog .post__title {
+    margin-left: 0.2em;
 }
 
 .sidebar {
     background-color: var(--sidebar-background-color);
     border-radius: 26px 0px 0px 26px;
-    padding: 6em;
     grid-column: 1 / 5;
     grid-row: 1;
+    //display: flex;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    //grid-template-rows: repeat(12,1fr);
+
     
 }
+
+.sidebar__content {
+   /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30%;
+    padding: 2em;*/
+    grid-column: 2 / 5;
+    //grid-row: 2 / 6;
+    padding-top: 8em;
+}
+
+
+
+.sidebar__title {
+    margin-bottom: 1.5em;
+}
+
+.sidebar__blurb {
+    padding-right: 1.5em;
+}
+
+.sidebar-menu {
+    grid-column: 2 / 5;
+    //grid-row: 2 / 36;
+    padding-top: 8em;
+    
+}
+
+.sidebar__blog-links {
+    margin-top: 2em;
+}
+
+.sidebar__blog-links a {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+
 
 .accent {
     grid-column: 12 / 12;
@@ -100,4 +297,12 @@ footer {
     flex-direction: column;
     margin: 20px;
   }
+
+  .divider {
+    text-align: center;
+    border-bottom: 3px var(--project-accent-color) double;
+  }
   
+  #navToggleButton {
+    display: none;
+  }

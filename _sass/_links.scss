@@ -7,7 +7,16 @@ header a {
     text-decoration: none;
 }
 
-.blog__post a, .post__link {
+.index__blog .post__link a {
+    text-decoration: none;
+}
+
+.index__projects a {
+    color: var(--title-link-color);
+    text-decoration: none;
+}
+
+.blog__post a, .post__link a, .index__follow-link a, .text__content p a, .grid__list a {
     color: var(--inline-link-color);
 }
 
@@ -17,4 +26,16 @@ header a {
 
 .sidebar a {
     color: var(--inverse-text-color);
+}
+
+a:hover {
+    font-weight: 900;
+}
+
+h2 a, .post__tags a {
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline;
 }

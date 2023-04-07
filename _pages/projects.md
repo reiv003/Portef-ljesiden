@@ -1,17 +1,9 @@
 ---
 title: Prosjekter
 permalink: /prosjekter
+layout: page
+sidebar-content: Prosjekter
 ---
 
-<div class="sidebar">
-    Prosjekter!
-</div>
-
-<div class="index">
-    <div><h1>Prosjekter</h1></div>
-    <div>
-        <h2>Prosjekt 1</h2>
-    </div>
+## Prosjekt 1
     
-</div>
-<div class="accent"><div class="accent2"></div></div>

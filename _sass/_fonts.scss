@@ -42,6 +42,10 @@ h2 {
     font-family: InterTightSemiBold;
 }
 
+.index h2 {
+    font-size: 2.5em;
+}
+
 h3 {
     color: var(--page-subtitle-color);
     font-size: 1.5em;
@@ -54,6 +58,14 @@ header nav {
 
 footer, .sidebar {
     color: var(--inverse-text-color);
+}
+
+.sidebar {
+    font-size: 1.2em;
+}
+
+.sidebar__title {
+    font-size: 1.5em;
 }
 
 .post__content h2 {
@@ -69,4 +81,15 @@ footer, .sidebar {
 
 .post__date {
     font-family: InterTightSemiBold;
+    font-size: 1.2em;
+}
+
+.index__projects h3 {
+    font-family: ManropeLight;
+}
+
+.post__tags {
+    color: var(--text-detail-color);
+    font-family: InterTightExtraLight;
+    font-size: 1.1em;
 }

@@ -2,17 +2,17 @@
     {% include sidebar.html %}
 </div>
 
-<div class="blog">
+<div class="blog" id="dimmable">
     <div class="blog__content">
         <h1 class="post__title"> Alle innlegg under {{ page.title }}</h1>
         <ul>
-            <!-- pagetag defineres i front matter (verdien er tagen det gjelder, f.eks. webdev, design, etc).
-            En ny html-fil må opprettes for hver tag-side. Sidene er under _pages > blog-pages > tags. -->
+            <!-- pagetag is defined in the front matter. The value is the relevant tag for the post. A new html file must be
+            made for each new tag, under _pages > blog-pages > tags. -->
             {% assign pagetag = site.tags[page.pagetag] %}
             {% for post in pagetag %}
             <li class="blog__post">
                 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <div class="post__date">{{ post.date | date: "%b %-d, %Y" }}</div>
+                <div class="post__date">{{ post.date | date: "%-d. %b %Y" }}</div>
                 <div class="post__tags">
                     <ul>
                         <li>
@@ -22,17 +22,18 @@
                                 {% assign tags = page.tags %}
                             {% endif %}
                           {% for tag in tags %}
-                            <a href="/blogg/tags/{{tag|slugize}}">{{tag}}</a>
-                            {% unless forloop.last %}&nbsp;{% endunless %}
+                            <a href="/blogg/tags/{{tag|slugize}}">{{tag}}</a>{% unless forloop.last %},{% endunless %}
                           {% endfor %}
                            </li>
                     </ul>
                 </div>
-                <div class="post">
+                <div class="post__content">
                     {{ post.content }}
+                    {% unless forloop.last%}<div class="divider"></div>{% endunless %}
                 </div>
             </li>
             {% endfor %}
         </ul>
     </div>
 </div>
+<div class="accent"><div class="accent2"></div></div>
