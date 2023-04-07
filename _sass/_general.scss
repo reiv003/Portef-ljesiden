@@ -151,16 +151,27 @@ footer {
 .text__content {
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: min-content max-content; 
+    //grid-template-rows: min-content max-content; 
+    //grid-auto-rows: 2em;
 }
 
-.text__content h1, .text__content p, .text__content div, .text__content h2 {
+.content__wrapper {
     grid-column: 2 / 10;
 }
 
+.content__wrapper:last-child {
+    margin-bottom: 2em;
+}
+
 .text__content p {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     margin-top: 0.5em;
+}
+
+
+
+.text__content h2, .text__content h3 {
+    margin-bottom: 0.7em;
 }
 
 .text__content h1 {
