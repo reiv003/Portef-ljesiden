@@ -29,9 +29,12 @@ permalink: /blogg
             </div>
             <div class="post__content">
                 {{ post.content }}
-                {% unless forloop.last%}<div class="divider"></div>{% endunless %}
             </div>
+           
         </li>
+        {% unless forloop.last%}<!--<div class="divider"></div>-->
+        <div class="divider__container"></div>
+        {% endunless %}
         {% endfor %}
     </ul></div>
 </div>

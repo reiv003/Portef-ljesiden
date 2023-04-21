@@ -280,6 +280,10 @@ footer {
     display: block;
 }
 
+.sidebar__toc p a{
+    display: flex;
+}
+
 
 
 .accent {
@@ -310,10 +314,51 @@ footer {
   }
 
   .divider {
-    text-align: center;
-    border-bottom: 3px var(--project-accent-color) double;
+    //text-align: center;
+    //border-bottom: 3px var(--project-accent-color) double;
+    //background-color: red;
+    //width: 20em;
+    //height: 0.3em;
+   
+    //border-image: url(/images/master_teal_50.jpg);
+    //overflow: hidden;
+    //white-space: nowrap;
+    //-webkit-background-clip: text;
+    //background-clip: text;
+   
+    //font-size: 95px;
+   
+    //color: transparent;
+    //width: 400px;
+    //margin-left: -1.1em !important;
+
+    //border option below
+    border-bottom: 7px #fff dashed;
+    background-image: url(/images/master_teal_50.jpg);
+
+    background-size: cover;
+  }
+
+  .divider__container {
+    display: inline-block;
+    border-bottom: 7px #fff dashed;
+    background-image: url(/images/master_teal_50.jpg);
+    width: 100%;
+    background-size: cover;
+  }
+
+  .project__list {
+    margin-bottom: 3em;
+  }
+
+  .project__list a {
+    display: inline-block;
   }
   
   #navToggleButton {
+    display: none;
+  }
+
+  #markdown-toc {
     display: none;
   }
