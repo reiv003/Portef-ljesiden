@@ -28,18 +28,22 @@
 }
 
 body {
-    font-family: Manrope;
+    font-family: Manrope, 'Lucida Sans', sans-serif;
     font-size: 16px;
+}
+
+.text__content, .post__content, .index__projects ul li div {
+    font-size: 1.1em;
 }
 
 h1 {
     font-size: 3em;
-    font-family: InterTightSemiBold;
+    font-family: InterTightSemiBold, 'Trebuchet MS', sans-serif;
 }
 
 h2 {
     font-size: 2em;
-    font-family: InterTightSemiBold;
+    font-family: InterTightSemiBold, 'Trebuchet MS', sans-serif;
 }
 
 .index h2 {
@@ -49,15 +53,17 @@ h2 {
 h3 {
     color: var(--page-subtitle-color);
     font-size: 1.5em;
+   
 }
 
 .text__content h3 {
     font-size: 1.3em;
+    background-color: rgba(98, 143, 117, 0.705);
 }
 
 header nav {
     font-size: 2em;
-    font-family: ManropeLight;
+    font-family: ManropeLight, 'Lucida Sans', sans-serif;
 }
 
 footer, .sidebar {
@@ -72,28 +78,38 @@ footer, .sidebar {
     font-size: 1.5em;
 }
 
+.sidebar__toc .sidebar__title {
+    font-size: 1.2em;
+}
+
 .post__content h2 {
     font-size: 2em;
-    font-family: InterTightThin;
+    font-family: InterTightThin, 'Trebuchet MS', sans-serif;
     color: var(--post-subtitle-color);
 }
 
 .site-title {
     font-size: 4em;
-    font-family: InterTightSemiBold;
+    font-family: InterTightSemiBold, 'Trebuchet MS', sans-serif;
 }
 
 .post__date {
-    font-family: InterTightSemiBold;
+    font-family: InterTightSemiBold, 'Trebuchet MS', sans-serif;
     font-size: 1.2em;
 }
 
 .index__projects h3 {
-    font-family: ManropeLight;
+    font-family: ManropeLight, 'Lucida Sans', sans-serif;
 }
 
 .post__tags {
     color: var(--text-detail-color);
-    font-family: InterTightExtraLight;
+    font-family: InterTightExtraLight, 'Trebuchet MS', sans-serif;
     font-size: 1.1em;
+}
+
+.project__date-info {
+    font-size: 0.7em;
+    color: var(--text-detail-color);
+    font-style: italic;
 }

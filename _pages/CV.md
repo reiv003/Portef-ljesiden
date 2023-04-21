@@ -2,8 +2,11 @@
 title: CV
 permalink: /CV
 layout: page
-sidebar-content: CV
+sidebar-content: Oversikt over utdanning, tidligere arbeidserfaring og mer.
 ---
+
+* 
+{:toc}
 
 Jeg har bachelor fra UiA i IT og Informasjonssystemer, og tok og nylig ettårig Frontend-utvikling ved Fagskolen Kristiania for å bygge videre på denne utdanningen. Jeg har tidligere vært ansatt i Centric, hvor jeg hadde oppdrag hos DGI som servicedeskmedarbeider. Der utførte jeg generell IT-support for ansatte i DGI’s seks eierkommuner, med et spesielt fokus på skolesaker.
 ## Utdanning

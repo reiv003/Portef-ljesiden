@@ -32,10 +32,19 @@ a:hover {
     font-weight: 900;
 }
 
-h2 a, .post__tags a {
+h2 a, .post__tags a, .project__list a {
     text-decoration: none;
 }
 
-h2 a:hover {
+h2 a:hover, .project__list a:hover {
     text-decoration: underline;
+    text-decoration-color: var(--title-underline-color);
 }
+
+.project__list a {
+    color: var(--inline-link-color);
+    
+}
+
+
+

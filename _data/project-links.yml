@@ -1,0 +1,15 @@
+# dates: year-month-day
+
+- title: Illustrasjonsportefølje
+  thumbnail-path: /images/projects/nettsiden-thumb.png
+  alt-text: Skjermbilde av en nettside.
+  date: 2023-04-21
+  description: >
+    Personlig nettside med blogg og bildegalleri. 
+
+- title: IT-portefølje
+  thumbnail-path: /images/projects/portef-thumb.png
+  alt-text: Skjermbilde av denne nettsiden.
+  date: 2023-04-07
+  description: >
+    Portefølje over IT-prosjekter, CV og blogg.
