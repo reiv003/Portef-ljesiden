@@ -3,8 +3,8 @@
 </div>
 
 <div class="blog" id="dimmable">
-    <div class="blog__content">
-        <h1 class="post__title"> Alle innlegg under {{ page.title }}</h1>
+    <div>
+        <h1> Alle innlegg under {{ page.title }}</h1>
         <ul>
             <!-- pagetag is defined in the front matter. The value is the relevant tag for the post. A new html file must be
             made for each new tag, under _pages > blog-pages > tags. -->
@@ -28,10 +28,12 @@
                     </ul>
                 </div>
                 <div class="post__content">
-                    {{ post.content }}
-                    {% unless forloop.last%}<div class="divider"></div>{% endunless %}
+                    {{ post.content }}         
                 </div>
             </li>
+            {% unless forloop.last%}
+                <div class="divider"></div>
+            {% endunless %}
             {% endfor %}
         </ul>
     </div>
