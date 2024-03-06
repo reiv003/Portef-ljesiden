@@ -3,18 +3,6 @@
   body {
     font-size: 14px;
   }
-
-
-  .blog {
-    background-color: var(--content-background-color);
-  }
-
-  .blog__post {
-    background-color: transparent;
-  }
-  #navToggleButton {
-    display: block;
-  }
     
   .hidden {
     display: none;
@@ -29,8 +17,37 @@
     transition: all 0.5s ease-out;
   }
 
-  .accent, .sidebar {
+  .accent {
     display: none;
+  }
+
+  #blog__sidebar {
+    grid-column: 10 / span 12;
+    z-index: 2;
+    background-color: transparent;
+    color: var(--sidebar-mobile-text-color);
+  }
+
+  #blog__sidebar a {
+    color: var(--sidebar-mobile-text-color);
+  }
+
+  .sidebar-menu {
+    grid-column: 2 / 6;
+    padding-top: 2em;
+  }
+
+  .burgermenu {
+    stroke: var(--sidebar-mobile-text-color);
+    stroke-width: 3;
+    fill: none;
+  }
+
+  #navToggleButton {
+    display: block;
+    z-index: 3;
+    position: relative;
+    padding-left: 1em;
   }
 
   .index, .blog, .text__content {
@@ -59,7 +76,7 @@
 
   .post__tags {
     font-size: 0.9rem;
-    grid-column: 11 / 12;
+    grid-column: 6 / 9;
 
   }
 
@@ -75,6 +92,35 @@
     font-size: 1.2rem;
   }
 
+  #markdown-toc {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 870px) {
+  .sidebar__content {
+    padding-right: 1em;
+    font-size: 0.9em;
+    grid-column: 2 / 3;
+  }
+
+  .sidebar__blurb {
+    padding-right: 0em;
+  }
+
+  .sidebar__title {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .sidebar__latest-posts, .sidebar__blog-links {
+    font-size: 0.9em;
+  }
+
+  .blog h1 {
+    padding-left: 0.8em;
+  }
 }
 
 @media screen and (max-width: 1280px) {

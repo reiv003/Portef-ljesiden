@@ -15,9 +15,10 @@ layout: null
         <item>
             <title>{{ post.title }}</title>
             <link>{{ post.url | prepend: site.url }}</link>
-            <description> {{ post.content | html_escape }}</description>
+            <description> {{ post.content | strip_html | truncatewords: 20 }} </description>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
             <guid>{{ post.url | prepend: site.url }}</guid>
+            <content type="html"> {{ post.content }} </content>
         </item>
         {% endfor %}
     </channel>

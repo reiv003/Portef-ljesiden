@@ -62,8 +62,16 @@ footer {
 
 }
 
-.blog__post, .index, .blog, .text__content {
+.index, .text__content {
     background-color: var(--content-background-color);
+    border-radius: 26px;
+    grid-column: 4 / 13;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.blog {
+      background-color: rgba(255,255,255,0.2);
     border-radius: 26px;
     grid-column: 4 / 13;
     grid-row: 1;
@@ -151,16 +159,27 @@ footer {
 .text__content {
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: min-content max-content; 
+    //grid-template-rows: min-content max-content; 
+    //grid-auto-rows: 2em;
 }
 
-.text__content h1, .text__content p, .text__content div, .text__content h2 {
+.content__wrapper {
     grid-column: 2 / 10;
 }
 
+.content__wrapper:last-child {
+    margin-bottom: 2em;
+}
+
 .text__content p {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     margin-top: 0.5em;
+}
+
+
+
+.text__content h2, .text__content h3 {
+    margin-bottom: 0.7em;
 }
 
 .text__content h1 {
@@ -171,52 +190,94 @@ footer {
     display: grid;
     grid-template-columns: repeat(12,1fr);
     //grid-template-rows: min-content max-content; 
+    box-shadow: -6px 6px 20px 0px rgba(0,0,0,0.3);
 }
 
 .blog h1 {
-    grid-column: 2 / 10;
-    margin-top: 1em;
-    margin-left: 0.6em;
+    grid-column: 1 / 13;
+    //margin-top: 1em;
+    //margin-left: 0.6em;
+    background-color: var(--content-background-color);
+    padding-left: 1.6em;
+    padding-top: 1em;
+    border-radius: 26px 26px 0px 0px;
+
 }
 
 .blog div {
+
+    // was 2 / 10 incase this breaks other pages and i have to make it its own class.
+    grid-column: 1 / 13;
+    //margin-left: 1em;
+}
+
+.blog__content {
+    grid-column: 1 / 13;
+    background: var(--content-background-color);
+    border-radius: 26px;
+}
+
+.blog__page {
+    grid-column: 1 / 13;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6, 7em);
+    background: var(--content-background-color);
+    border-radius: 26px;
+}
+
+.blog__page h1 {
     grid-column: 2 / 10;
-    margin-left: 1em;
+    padding-left: 0px;
+}
+
+.blog__page .grid__list {
+    grid-column: 2 / 10;
 }
 
 .blog__post {
     display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background-color: #fff;
+}
+
+.individual__post {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background-color: #fff;
+    border-radius: 26px;
+}
+
+.individual__post h1 {
+    grid-column: 1 / 12;
+}
+
+.blog__post:last-child {
+    border-radius: 0px 0px 26px 26px;
 }
 
 .blog__post h2 {
-    grid-column: 1 / 12;
+    grid-column: 2 / span 12;
     margin-top: 0.5em;
-    margin-left: 0.4em;
+    //margin-left: 0.4em;
 }
 
-.blog__post h1 {
-    grid-column: 1 / 12;
-    margin-top: 1em;
-    margin-left: 0.3em;
-}
 
-.blog__post .post__date {
-    grid-column: 11 / 12;
+
+.blog__post .post__date, .individual__post .post__date {
+    grid-column: 8 / 10;
     text-align: right;
 }
 
-.blog__post .post__tags {
-    grid-column: 10 / 12;
+.blog__post .post__tags, .individual__post .post__tags {
+    grid-column: 7 / 10;
     text-align: right;
 }
 
-.blog__post .post__content {
-    grid-column: 1 / 12;
+.blog__post .post__content, .individual__post .post__content {
+    grid-column: 2 / 10;
 }
 
-.blog .post__title {
-    margin-left: 0.2em;
-}
 
 .sidebar {
     background-color: var(--sidebar-background-color);
@@ -269,6 +330,10 @@ footer {
     display: block;
 }
 
+.sidebar__toc p a{
+    display: flex;
+}
+
 
 
 .accent {
@@ -286,23 +351,44 @@ footer {
     background-color: var(--post-accent-color);
 }
 
+.grid__list {
+    grid-column: 2 / 10;
+}
+
+
 .grid__list ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-  }
+}
   
   .grid__list li {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-  }
+    margin: 2em 2em 2em 0em;
+}
 
   .divider {
-    text-align: center;
-    border-bottom: 3px var(--project-accent-color) double;
+    border-bottom: 3px #fff dashed;
+    width: 100%;
+  }
+
+  .divider + .blog__post {
+    padding-top: 2em;
+  }
+
+  .project__list {
+    margin-bottom: 3em;
+  }
+
+  .project__list a {
+    display: inline-block;
   }
   
   #navToggleButton {
+    display: none;
+  }
+
+  #markdown-toc {
     display: none;
   }

@@ -1,0 +1,22 @@
+---
+title: Prosjekter
+permalink: /prosjekter
+layout: page
+sidebar-content: Her har jeg skrevet i detalj om de større IT-prosjektene jeg har hatt.
+---
+
+<div>
+  <ul>
+  {% assign projects = site.data.project-links | sort: 'date' | reverse %}
+  {% for project in projects %}
+    <li class="project__list">
+      <a href="/prosjekter/{{ project.title | slugify: "latin" }}">
+        <img src="{{ project.thumbnail-path }}" alt="{{ project.alt-text }}"/>
+          <h2>{{ project.title }}</h2>
+      </a>
+      <div>Publisert: {{ project.date }}</div>
+      <div>{{ project.description }}</div>
+    </li>
+      {% endfor %}
+  </ul>
+</div>

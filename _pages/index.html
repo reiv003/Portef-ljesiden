@@ -6,7 +6,7 @@ permalink: /
 
 <div class="sidebar">
 <div class="sidebar__content">
-    <div><h1 class="sidebar__title">Velkommen!</h1></div>
+    <div><h1 class="sidebar__title">Hei!</h1></div>
     <div class="sidebar__blurb">
      På denne siden har jeg lagt ut min CV, artikler om prosjektene jeg har jobbet med og innlegg om løst og fast innen IT.</div>
     </div>
@@ -40,19 +40,13 @@ permalink: /
         <div class="index__projects">
             <h2>Prosjekter</h2>
                 <ul>
+                    {% assign projects = site.data.project-links | sort: 'date' | reverse | limit:3 %}
+                    {% for project in projects %}
                     <li>
-                        <h3><a href="/prosjekter">Prosjekt 1 ➜</a></h3>
-                        <div>En linje om prosjektet, som omfatter eksisterende nettsider og designskisser.</div>
+                        <h3><a href="/prosjekter/{{ project.title | slugify: "latin" }}"">{{ project.title }} ➜</a></h3>
+                        <div>{{ project.description }}</div>
                     </li>
-                    <li>
-                        <h3>
-                        <a href="/prosjekter">Prosjekt 2 ➜</a></h3>
-                        <div>En linje om prosjektet, som omfatter eksisterende nettsider og designskisser.</div>
-                    </li>
-                    <li>
-                        <h3><a href="/prosjekter">Prosjekt 3 ➜</a></h3>
-                        <div>En linje om prosjektet, som omfatter eksisterende nettsider og designskisser.</div>
-                    </li>
+                    {% endfor %}
                 </ul>
                 <div class="index__follow-link"><a href="/prosjekter">Se alle ➜</a></div>
     </div>

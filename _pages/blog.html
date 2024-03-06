@@ -3,7 +3,7 @@ title: Blogg
 permalink: /blogg
 ---
 
- <div class="sidebar">
+ <div class="sidebar" id="blog__sidebar">
     {% include sidebar.html %}
     </div>
 <div class="blog" id="dimmable">
@@ -29,9 +29,12 @@ permalink: /blogg
             </div>
             <div class="post__content">
                 {{ post.content }}
-                {% unless forloop.last%}<div class="divider"></div>{% endunless %}
             </div>
+           
         </li>
+        {% unless forloop.last%}
+            <div class="divider"></div>
+        {% endunless %}
         {% endfor %}
     </ul></div>
 </div>
