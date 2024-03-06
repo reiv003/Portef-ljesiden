@@ -9,8 +9,6 @@ Jeg er en utvikler med hovedfokus på design. Jeg lagde denne nettsiden delvis s
 
 ## Kontaktinfo
 
-E-post: rebeccaiversen96 [at] gmail . com
-
 LinkedIn: [rebeccaiversen](https://www.linkedin.com/in/rebeccaiversen/)
 
 GitHub: [reiv003](https://github.com/reiv003)
