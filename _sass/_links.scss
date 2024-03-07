@@ -16,7 +16,7 @@ header a {
     text-decoration: none;
 }
 
-.blog__post a, .post__link a, .index__follow-link a, .text__content p a, .grid__list a {
+.blog__post a, .post__link a, .index__follow-link a, .text__content p a, .grid__list a, .cv__container a {
     color: var(--inline-link-color);
 }
 
@@ -46,5 +46,8 @@ h2 a:hover, .project__list a:hover {
     
 }
 
+.toc li a:hover {
+    text-decoration: none;
+}
 
 

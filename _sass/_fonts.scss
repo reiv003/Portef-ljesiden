@@ -27,6 +27,12 @@
     font-weight: 300;
 }
 
+@font-face {
+    font-family: ManropeExtraBold;
+    src: url('/assets/fonts/Manrope-VariableFont_wght.ttf');
+    font-weight: 800;
+}
+
 body {
     font-family: Manrope, 'Lucida Sans', sans-serif;
     font-size: 16px;
@@ -107,4 +113,13 @@ footer, .sidebar {
     font-size: 0.7em;
     color: var(--text-detail-color);
     font-style: italic;
+}
+
+.toc {
+    font-family: ManropeExtraBold;
+}
+
+.cv__container .content__wrapper h3 {
+    color: #105463;
+    font-size: 1.3em;
 }

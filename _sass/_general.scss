@@ -178,7 +178,7 @@ footer {
 
 
 
-.text__content h2, .text__content h3 {
+.text__content h2{
     margin-bottom: 0.7em;
 }
 
@@ -385,6 +385,16 @@ footer {
     display: inline-block;
   }
 
+  .cv__subheading {
+    display: flex;
+    align-items: first baseline;
+  }
+
+  .cv__subheading-accent {
+    overflow: hidden;
+    margin-left: 1em;
+  }
+
   .cv__container {
     display: grid;
     grid-column: 1 / span 12;
@@ -396,26 +406,108 @@ footer {
   .cv__container .content__wrapper {
     grid-column: 2 / 12;
     background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
   }
 
-  .cv__container .content__wrapper h3 {
-    text-decoration: underline overline 1px #A0CEE8 solid;
-    display: inline;
-    grid-column: 2 / 12;
+  .cv__category-heading {
+    border: 1px #A0CEE8; 
+    border-top-style: solid;
+    border-bottom-style: solid;
+    //text-decoration: underline overline 1px #A0CEE8 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .cv__category-properties {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+  }
+
+  .cv__category-properties li {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .cv__category-content {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+.cv__category-desc {
+    grid-column: 1 / 8;
+}
+
+.cv__link-box {
+    grid-column: 9 / span 12;
+}
+
+  .cv__category-properties li::before {
+    content: '';
+    display: inline-block;
+    height: 0.7em;
+    width: 0.7em;
+    background-color: #A0CEE8;
+    margin-right: 0.4em;
+  }
+
+  .cv__categories {
+    grid-column: 1 / span 12;
+    margin-top: 3em;
   }
   
 
   .cv__title-accent {
     background-color: #379EAC;
     grid-column: 1 / span 12;
-    margin-top: 2em;
+    margin-top: 3.2em;
   }
   .cv__title-accent h1 {
     background-color: #fff;
     display: inline;
     margin-left: 2rem;
     grid-column: 2 / 12;
-   
+    margin-left: 1.5em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+
+  .cv__blurb {
+    grid-column: 1 / 8;
+  }
+
+  #cv__blurb-content {
+    background-color: #E8F7FC;
+    border-radius: 23px;
+    padding: 0.5em;
+    margin: 0px;
+  }
+
+  .cv__blurb-border {
+    border: 1px #E8F7FC solid;
+    padding: 0.5em;
+    border-radius: 23px;
+    margin-top: 1em;
+  }
+
+  .toc {
+    grid-column: 8 / 12;
+    margin-left: 4em;
+    margin-top: 3.5em;
+  }
+
+  .toc li {
+    list-style-type: disc;
+  }
+
+  .toc li::marker {
+    color: var(--inline-link-color);
   }
   
   #navToggleButton {
