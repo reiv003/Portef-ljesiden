@@ -16,7 +16,13 @@ header a {
     text-decoration: none;
 }
 
-.blog__post a, .post__link a, .index__follow-link a, .text__content p a, .grid__list a, .cv__container a {
+.index__projects h3 a:hover, .post__content a:hover {
+    background-color: var(--title-underline-color);
+    transition: 0.2s ease-in;
+    font-weight: normal;
+}
+
+.blog__post a, .post__link a, .index__follow-link a, .text__content p a, .grid__list a, .cv__container a, .post__content p a {
     color: var(--inline-link-color);
 }
 
@@ -46,8 +52,9 @@ h2 a:hover, .project__list a:hover {
     
 }
 
-.toc li a:hover {
+.toc li a:hover, .cv__link-box a:hover {
     text-decoration: none;
+    background-color: var(--title-underline-color);
+    transition: 0.1s ease-in;
 }
-
 

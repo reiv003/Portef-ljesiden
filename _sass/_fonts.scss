@@ -17,6 +17,12 @@
 }
 
 @font-face {
+    font-family: InterTightSemiBoldItalic;
+    src: url('/assets/fonts/InterTight-Italic-VariableFont_wght.ttf');
+    font-weight: 600;
+}
+
+@font-face {
     font-family: Manrope;
     src: url('/assets/fonts/Manrope-VariableFont_wght.ttf');
 }
@@ -31,6 +37,18 @@
     font-family: ManropeExtraBold;
     src: url('/assets/fonts/Manrope-VariableFont_wght.ttf');
     font-weight: 800;
+}
+
+@font-face {
+    font-family: ManropeMedium;
+    src: url('/assets/fonts/Manrope-VariableFont_wght.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: ManropeExtraLight;
+    src: url('/assets/fonts/Manrope-VariableFont_wght.ttf');
+    font-weight: 200;
 }
 
 body {
@@ -122,4 +140,15 @@ footer, .sidebar {
 .cv__container .content__wrapper h3 {
     color: #105463;
     font-size: 1.3em;
+    font-family: ManropeMedium;
+}
+
+.cv__category-properties {
+    font-size: 1.3em;
+    color: #318294;
+    font-family: ManropeExtraLight;
+}
+
+.cv__link-box a {
+    font-family: InterTightSemiBoldItalic;
 }
