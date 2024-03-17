@@ -95,21 +95,22 @@ footer {
 
 .index__post {
     display: grid;
+    grid-template-columns: repeat(12,1fr);
 }
 
 .index__post h3 {
-    grid-column: 1 / 12;
+    grid-column: 1 / span 12;
     grid-row: 1;
 }
 
 .index__post .post__date {
-    grid-column: 11 / 12;
+    grid-column: 11 / span 12;
     text-align: right;
     grid-row: 1;
 }
 
 .index__post .post__tags {
-    grid-column: 9 / 12;
+    grid-column: 9 / span 12;
     margin-bottom: 0.7em;
     text-align: right;
 }
@@ -119,7 +120,7 @@ footer {
 }
 
 .index__post .post__link {
-    grid-column: 11 / 12;
+    grid-column: 11 / span 12;
     margin-top: 0.5em;
 }
 
@@ -133,6 +134,7 @@ footer {
     padding-left: 1em;
     grid-column: 1 / 10;
     display: grid;
+    grid-template-columns: repeat(12,1fr);
     margin-top: 2em;
     margin-bottom: 3em;
     margin-left: 4em;
@@ -410,7 +412,7 @@ footer {
   }
 
   .cv__container .content__wrapper {
-    grid-column: 2 / 12;
+    grid-column: 1 / span 12;
     background-color: transparent;
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -461,7 +463,7 @@ footer {
   }
 
   .cv__categories {
-    grid-column: 1 / span 12;
+    grid-column: 2 / 12;
     margin-top: 3em;
   }
   
@@ -485,7 +487,7 @@ footer {
   }
 
   .cv__blurb {
-    grid-column: 1 / 8;
+    grid-column: 2 / 8;
   }
 
   #cv__blurb-content {
@@ -500,6 +502,10 @@ footer {
     padding: 0.5em;
     border-radius: 23px;
     margin-top: 2.6em;
+  }
+
+  .mobile-cv__category-properties {
+    display: none;
   }
 
   .toc {
