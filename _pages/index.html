@@ -6,14 +6,14 @@ permalink: /
 
 <div class="sidebar">
 <div class="sidebar__content">
-    <div><h1 class="sidebar__title">Hei!</h1></div>
+    <h1 class="sidebar__title">Hei!</h1>
     <div class="sidebar__blurb">
      På denne siden har jeg lagt ut min CV, artikler om prosjektene jeg har jobbet med og innlegg om løst og fast innen IT.</div>
     </div>
 </div>
 
 <div class="index">
-        <div class="index__blog">
+        <div class="index__blog scallop-border">
             <h2>Siste blogginnlegg</h2>
                 {% for post in site.posts limit: 1 %}
                 <div class="index__post"><h3>{{ post.title }}</h3>
@@ -37,7 +37,7 @@ permalink: /
                 </div>
                 {% endfor %}
     </div>
-        <div class="index__projects">
+        <div class="index__projects scallop-border">
             <h2>Prosjekter</h2>
                 <ul>
                     {% assign projects = site.data.project-links | sort: 'date' | reverse | limit:3 %}
