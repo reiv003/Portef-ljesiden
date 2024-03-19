@@ -23,6 +23,18 @@
 }
 
 @font-face {
+    font-family: InterTight;
+    src: url('/assets/fonts/InterTight-VariableFont_wght.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: InterTightExtraBold;
+    src: url('/assets/fonts/InterTight-VariableFont_wght.ttf');
+    font-weight: 800;
+}
+
+@font-face {
     font-family: Manrope;
     src: url('/assets/fonts/Manrope-VariableFont_wght.ttf');
 }

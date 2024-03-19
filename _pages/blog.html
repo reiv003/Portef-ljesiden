@@ -7,25 +7,36 @@ permalink: /blogg
     {% include sidebar.html %}
     </div>
 <div class="blog" id="dimmable">
-    <h1>Blogg</h1>
+    <div class="blog__mobile-nav scallop-border">
+        <h1>Blogg</h1>
+        <div class="blog__mobile-nav-links">
+            <ul>
+                <li><a href="/blogg/arkiv">Arkiv</a></li>
+                <li><a href="/blogg/tags">Tags</a></li>
+                <li><a href="/feed.xml">RSS-feed</a></li>
+            </ul>
+        </div>
+    </div>
     <div><ul>
         {% for post in site.posts %}
-        <li class="blog__post">
+        <li class="blog__post scallop-border">
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <div class="post__date">{{ post.date | date: "%-d. %b %Y" }}</div>
-            <div class="post__tags">
-                <ul>
-                    <li>
-                        {% if post %}
-                            {% assign tags = post.tags %}
-                        {% else %}
-                            {% assign tags = page.tags %}
-                        {% endif %}
-                        {% for tag in tags %}
-                            <a href="/blogg/tags/{{tag|slugize}}">{{tag}}</a>{% unless forloop.last %},{% endunless %}
-                        {% endfor %}
-                    </li>
-                </ul>
+            <div class="post__info">
+                <div class="post__date">{{ post.date | date: "%-d. %b %Y" }}</div>
+                <div class="post__tags">
+                    <ul>
+                        <li>
+                            {% if post %}
+                                {% assign tags = post.tags %}
+                            {% else %}
+                                {% assign tags = page.tags %}
+                            {% endif %}
+                            {% for tag in tags %}
+                                <a href="/blogg/tags/{{tag|slugize}}">{{tag}}</a>{% unless forloop.last %},{% endunless %}
+                            {% endfor %}
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="post__content">
                 {{ post.content }}

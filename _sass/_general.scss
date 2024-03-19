@@ -271,6 +271,10 @@ footer {
     text-align: right;
 }
 
+.blog .post__info {
+    grid-column: 8 / 10;
+}
+
 .blog__post .post__tags, .individual__post .post__tags {
     grid-column: 7 / 10;
     text-align: right;
@@ -278,6 +282,10 @@ footer {
 
 .blog__post .post__content, .individual__post .post__content {
     grid-column: 2 / 10;
+}
+
+.blog__mobile-nav-links {
+    display: none;
 }
 
 
@@ -448,10 +456,6 @@ footer {
     grid-column: 1 / 8;
 }
 
-.cv__link-box {
-    grid-column: 9 / span 12;
-}
-
   .cv__category-properties li::before {
     content: '';
     display: inline-block;
@@ -506,6 +510,10 @@ footer {
 
   .mobile-cv__category-properties {
     display: none;
+  }
+
+  .cv__desc-sidebar {
+    grid-column: 9 / span 12;
   }
 
   .toc {
