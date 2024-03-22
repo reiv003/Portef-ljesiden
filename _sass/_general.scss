@@ -529,6 +529,10 @@ footer {
   .toc li::marker {
     color: var(--inline-link-color);
   }
+
+  .mobile__blurb {
+    display: none;
+  }
   
   #navToggleButton {
     display: none;

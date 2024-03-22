@@ -183,7 +183,8 @@
     padding: 0.3em;
   }
 
-  .sidebar {
+  .mobile__blurb {
+    display: block;
     border-radius: 0px 0px 26px 26px;
     grid-column: 1/13;
     grid-row: 1;
@@ -194,6 +195,8 @@
     margin-right: 0.7em;
     margin-top: -5px;
     z-index: 1;
+    background-color: var(--sidebar-background-color);
+    font-size: 1.2em;
   }
 
   .sidebar__content {
@@ -213,6 +216,10 @@
 
   .sidebar__blurb {
     padding-right: 1.2em;
+  }
+
+  .sidebar {
+    display: none;
   }
 
   .index {
@@ -355,16 +362,17 @@
     grid-column: 1 / span 12;
     font-size: 0.9em;
     padding-bottom: 2em;
+    margin-bottom: 2em;
   }
 
   .cv__category-desc {
     grid-column: 2 / 8;
-    padding-top: 1.5em;
+    border-left: 6px #E8F1F8 solid;
    
   }
 
   .cv__category-desc p {
-    border-left: 6px #E8F1F8 solid;
+   
     padding-left: 0.5em;
   }
 
@@ -380,7 +388,6 @@
 
   .mobile-cv__category-properties {
     display: block;
-    padding-top: 2.2em;
    
   }
 
@@ -442,7 +449,6 @@
     margin: 0px;
     z-index: 1;
     display: flex;
-    margin-top: 2em;
   }
 
   .blog__post h2 a {
@@ -463,9 +469,8 @@
   }
 
   .blog__post .post__tags {
-    grid-row: 1;
-    grid-column: 8 / 12;
     margin-left: 2em;
+    padding-bottom: 0.5em;
     
   }
 
@@ -481,11 +486,14 @@
     border-left: 1px #CFDEE1 solid;
     padding-right: 1em;
     background-color: #DBEAED;
-    margin-top: 4em;
   }
 
   .blog__post .post__content {
     font-size: 1.3em;
+  }
+
+  .posts__list {
+    margin-bottom: 2em;
   }
 
   .toc {
@@ -493,12 +501,12 @@
   }
 
   .scallop-border {
-    border: solid rgba(162, 197, 204, 0.25);
-    border-width: 0 1px 1px 1px;
-    border-radius: 26px;
+    border-bottom: solid rgba(162, 197, 204, 0.25) 1px;
+    border-left: solid rgba(162, 197, 204, 0.25) 1px;
+    border-right: solid rgba(162, 197, 204, 0.25) 1px;
+    border-radius: 0px 0px 26px 26px;
     //filter: drop-shadow(0 0 0.75rem crimson);
-    box-shadow: 0 0 2px 2px rgba(231, 236, 244,0.25);
-    clip-path: inset(25px 0px -3px 0px);
+    box-shadow: 0 2px 2px 0px rgba(231, 236, 244,0.25);
     margin-left: -1px;
     margin-right: -1px;
 
